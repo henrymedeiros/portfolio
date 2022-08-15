@@ -7,13 +7,13 @@ const Header = () => {
        <nav>
         <a href="#" className={HeaderCss.logo}>Henry</a>
         <ul>
-            <li><a href='#'></a></li>
-            <a href="#">
-                <li>Início</li>
-            </a>
-            <a href="#">
-                <li>Sobre</li>
-            </a>
+            
+            <li><a href="#">
+                Início
+            </a></li>
+            <li><a href="#">
+                Sobre
+            </a></li>
             <a href="#">
                 <li>Projetos</li>
             </a>

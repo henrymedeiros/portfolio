@@ -2,11 +2,7 @@ header {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 0 104px;
   height: 90px;
-  a{
-    text-decoration: none;
-  }
   .logo{
     color: var(--title-color);
     font-size: 32px;
@@ -24,10 +20,14 @@ header {
         margin-left: 18px;
         padding-right: 18px;
         font-size: 20px;
-        font-weight: medium;
-        color: var(--text-color)
-        
+        font-weight: 500;
+        color: var(--text-color);
+        &:focus {
+          color:var(--primary-color)
+        }
+
       }
     }
   }
+  
 }
