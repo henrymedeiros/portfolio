@@ -14,6 +14,9 @@
   --primary-color:#6E57E0;
   --primary-color-darker:hsl(250,57%,53%);
   --primary-color-lighter:hsl(250,92%,75%);
+  --bg-color: #FBFBFE;
+
+  
 
 
   --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
@@ -23,6 +26,28 @@
   font-weight: 500;
 
 }
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color-lighter) var(--bg-color);
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color-lighter);
+  border: 3px solid var(--bg-color);
+  border-radius: 10px;
+}
+
+body{
+  background-color: var(--bg-color);
+}
+
+
 
 a{
   text-decoration: none;
@@ -34,7 +59,7 @@ a{
 
 .main-container{
   width: 100%;
-  padding: 0 50px;
+  padding: 0 80px;
   margin: 0 auto;
 }
 
