@@ -15,6 +15,9 @@ function App() {
         <Hero></Hero>
         <About></About>
         <Projects></Projects>
+        <br />
+        <br />
+        <br />
       </div>
     </div>
   );

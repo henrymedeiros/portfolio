@@ -8,10 +8,10 @@ const Header = () => {
         <a href="#" className={HeaderCss.logo}>Henry</a>
         <ul>
             
-            <li><a href="#">
+            <li><a href="#hero">
                 Início
             </a></li>
-            <li><a href="#">
+            <li><a href="#about">
                 Sobre
             </a></li>
             <a href="#">

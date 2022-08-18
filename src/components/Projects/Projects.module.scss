@@ -1,0 +1,20 @@
+.Projects{
+    .ProjectsGrid{
+        display: grid;
+        gap: 1.25rem;
+        margin: 0 auto;
+        max-width: 100%;
+        .ProjectItem{
+            width: 100%;
+            background-color: red;
+            height: 250px;
+            border-radius: 12px;
+        }
+    }
+    @media (min-width: 600px) {
+        .ProjectsGrid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 800px) {
+        .ProjectsGrid { grid-template-columns: repeat(3, 1fr); }
+    }
+}
