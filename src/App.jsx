@@ -23,8 +23,8 @@ function App() {
         <About></About>
         <Projects setOpenModal={setOpenModal}></Projects>
         <Contact></Contact>
-        
       </div>
+      
       
     </div>
   );
