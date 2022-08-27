@@ -1,20 +1,94 @@
-.Projects{
-    .ProjectsGrid{
-        display: grid;
-        gap: 1.25rem;
-        margin: 0 auto;
-        max-width: 100%;
-        .ProjectItem{
-            width: 100%;
-            background-color: red;
-            height: 250px;
-            border-radius: 12px;
+.Projects {
+  .ProjectsGrid {
+    display: grid;
+    gap: 1.25rem;
+    padding: 4rem 0;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    .ProjectItem {
+      width: 100%;
+      background-color: transparent;
+      border-radius: 12px;
+     
+      figure {
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        figcaption, .Overlay{
+            opacity: 0;
         }
+        &:hover{
+            .Overlay{
+                opacity: 0.8;
+            }
+            figcaption{
+                opacity: 1;
+                transform: translateY(0);
+                
+            }
+            cursor: pointer;
+        }
+
+        img {
+          height: auto;
+          aspect-ratio: 4/3;
+          object-fit: cover;
+          width: 100%;
+          backdrop-filter: blur(205px);
+          transition: transform 0.25s;
+          &:hover{
+            transform: scale(1.2);
+          }
+        }
+        figcaption {
+          max-width: 100%;
+          display: flex;
+          position: absolute;
+          
+          z-index: 1000;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          text-align: center;
+          padding: 0 1.25rem;
+          color: #fff;
+          transform: translateY(20px);
+          transition: transform 0.25s;
+          h2{
+            font-weight: 600;
+          }
+          button{
+            margin: .75rem 0;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            &:hover{
+              background-color: var(--primary-color);
+            }
+            
+          }
+          button span{
+              margin-left: 5px ;
+          }
+          
+        }
+        .Overlay {
+            background-color: #141c3a;
+            backdrop-filter: blur(5px);
+            position: absolute;
+            width: 100%;
+            height: auto;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            height: 100%;
+            transition: opacity 0.25s;
+          }
+      }
     }
-    @media (min-width: 600px) {
-        .ProjectsGrid { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (min-width: 800px) {
-        .ProjectsGrid { grid-template-columns: repeat(3, 1fr); }
-    }
+  }
 }

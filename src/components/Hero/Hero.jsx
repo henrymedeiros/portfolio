@@ -4,10 +4,11 @@ import ProgrammerSVG from "./ProgrammerSVG.jsx";
 import Button from "../Button/Button.jsx";
 
 const Hero = () => {
+  
   return (
     <section id="hero" className={HeroCss.HeroSection}>
       <div className={HeroCss.HeroText}>
-        <h1 className={HeroCss.Title}>Henry Medeiros</h1>
+        <h1 className={`${HeroCss.Title} hero-title`}>Henry Medeiros</h1>
         <h2 className={HeroCss.Subtitle}>
           {/*<Typewriter
             options={{

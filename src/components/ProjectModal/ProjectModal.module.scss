@@ -1,0 +1,32 @@
+.ModalBG{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  top:0;
+  left: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    .ModalContainer{
+      position: relative;
+      max-width: 50%;
+      background-color: #fff;
+      display: flex;
+     
+      .CloseBtn{
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .ProjectPreview{
+        width: 60%;
+
+      }
+      .ProjectInfo{
+        width: 40%;
+        padding: 4%;
+      }
+    }
+}
