@@ -14,7 +14,7 @@
       max-width: 50%;
       background-color: #fff;
       display: flex;
-     
+       
       .CloseBtn{
         position: absolute;
         top: 0;
@@ -22,11 +22,47 @@
       }
       .ProjectPreview{
         width: 60%;
+        background-color: var(--primary-color);
+        display: flex;
+        align-items: center;
+
 
       }
       .ProjectInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: 40%;
         padding: 4%;
+        .TagList{
+          margin: 0.25rem 0 1rem 0;
+          .Tag{
+            padding: 2px 10px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: 4px;
+            font-weight: 400;
+            font-size: var(--small-text);
+            margin-right: .4rem;
+          }
+        }
+        h1,h3{
+          color: var(--title-color);
+        }
+        h3{
+          margin-bottom: 1.5rem;
+        }
+        p{
+          max-height: 250px;
+          overflow-y: scroll;
+        }
+        .ButtonsContainer{
+          margin: 1rem 0;
+          button{
+            margin-right: .6rem;
+          }
+        }
+        
       }
     }
 }

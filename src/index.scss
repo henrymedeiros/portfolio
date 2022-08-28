@@ -32,6 +32,7 @@ img,picture{
   --h1: 3rem;
   --h2: 1.5rem;
   --h3: 1.125rem;
+  --small-text: 0.8rem;
 
   .btn{
     border: none;
@@ -42,7 +43,7 @@ img,picture{
   }
 
   .btn--small {
-    padding: 6px 12px;
+    padding: 6px 15px;
     font-size: 16px
   }
 
@@ -65,8 +66,23 @@ img,picture{
 
   .btn-secondary{
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 1px solid var(--primary-color);
+    color:var(--primary-color);
+    &:hover{
+      background-color: var(--primary-color);
+      color: #fff;
+    }
+  }
+
+  .btn-secondary-alt{
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
     color:#fff;
+    &:hover{
+      background-color: var(--primary-color);
+      color: #fff;
+    }
+
   }
 
   .rounded{
@@ -101,6 +117,24 @@ body{
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: 'Poppins', sans-serif;
+}
+
+footer{
+  nav{
+    margin: 1rem 0;
+    ul{
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      li{
+        margin: 0 1rem;
+        a:visited{
+          color: inherit;
+        }
+      }
+    }
+  }
+    
 }
 
 

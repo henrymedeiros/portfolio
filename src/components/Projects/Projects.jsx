@@ -4,12 +4,12 @@ import ProjectItem from "./ProjectItem"
 
 const Projects = ({setOpenModal}) => {
   let projects = [
-    {name: 'Rola', setOpenModal: setOpenModal},
-    {name: 'Rola2', setOpenModal: setOpenModal},
-    {name: 'Rola2', setOpenModal: setOpenModal},
-    {name: 'Rola2', setOpenModal: setOpenModal},
-    {name: 'Rola2', setOpenModal: setOpenModal},
-    {name: 'Rola2', setOpenModal: setOpenModal}
+    {name: 'Blackjack Javascript', imgSrc: "src/assets/blackjack.png", setOpenModal: setOpenModal},
+    {name: 'MyWeatherApp', imgSrc: "src/assets/weatherApp.png", setOpenModal: setOpenModal},
+    {name: 'React Memory Game ', imgSrc: "src/assets/memoryGame.png", setOpenModal: setOpenModal},
+    {name: 'Eduford Site', imgSrc: "src/assets/eduford.png", setOpenModal: setOpenModal},
+    {name: 'Video Player', imgSrc: "src/assets/videoPlayer.png", setOpenModal: setOpenModal},
+    {name: 'Light and Dark Mode', imgSrc: "src/assets/lightDark.png", setOpenModal: setOpenModal}
   ]
   return (
     <section id="projects" className={ProjectsCss.Projects}>
