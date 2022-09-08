@@ -10,7 +10,7 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [openModal, setOpenModal] = useState(false);
-  const [scrollDir, setScrollDir] = useState("scrolling down");
+  const [scrollDir, setScrollDir] = useState("scrolling up");
 
   useEffect(() => {
     const threshold = 0;
