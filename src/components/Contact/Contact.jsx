@@ -5,7 +5,7 @@ import { FaBehance } from "react-icons/fa";
 const Contact = () => {
   const iconSize = 24;
   return (
-    <section className={ContactCss.ContactSection}>
+    <section id="contact" className={ContactCss.ContactSection}>
       <h1 className="section-title">Contato</h1>
       <p>
         If you want to carry out a project or chat with me, please fill this

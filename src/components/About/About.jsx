@@ -18,14 +18,15 @@ const About = () => {
             pela Universidade Federal do Rio Grande do Norte e Técnico graduado
             em Informática pelo Instituto Federal de Educação, Ciência e
             Tecnologia do Rio Grande do Norte - IFRN.
-            <br /><br />
-            <ul>
+          
+            
+          </p>
+          <ul>
               <li>Softskill 1</li>
               <li>Softskill 1</li>
               <li>Softskill 1</li>
             </ul>
-          </p>
-          <a href="src\assets\cv.pdf" download>
+          <a href="src\assets\cv.pdf" target="_blank">
             <button className="btn btn-primary btn--large">
               
               Baixar cúrriculo

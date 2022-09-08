@@ -1,31 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
-  
-
+  font-family: "Poppins", sans-serif;
 }
 
-img,picture{
+img,
+picture {
   max-width: 100%;
   display: block;
-  
 }
 
 :root {
-  --text-color: #6D6A7C;
-  --title-color:#242329;
+  --text-color: #6d6a7c;
+  --title-color: #242329;
   --hue-value: 250;
-  --primary-color:hsl(var(--hue-value), 69%, 61%);
-  --primary-color-rgb:87, 121, 224;
-  --primary-color-darker:hsl(var(--hue-value),57%,53%);
-  --primary-color-lighter:hsl(var(--hue-value),92%,75%);
-  --bg-color: #FBFBFE;
+  --primary-color: hsl(var(--hue-value), 69%, 61%);
+  --primary-color-rgb: 87, 121, 224;
+  --primary-color-darker: hsl(var(--hue-value), 57%, 53%);
+  --primary-color-lighter: hsl(var(--hue-value), 92%, 75%);
+  --bg-color: #fbfbfe;
 
   /* Font Size */
   --display-title: 3.75rem;
@@ -34,17 +31,16 @@ img,picture{
   --h3: 1.125rem;
   --small-text: 0.8rem;
 
-  .btn{
+  .btn {
     border: none;
     cursor: pointer;
     border-radius: 8px;
     outline: none;
-    
   }
 
   .btn--small {
     padding: 6px 15px;
-    font-size: 16px
+    font-size: 16px;
   }
 
   .btn--medium {
@@ -56,45 +52,42 @@ img,picture{
     font-size: 18px;
   }
 
-  .btn-primary{
+  .btn-primary {
     background-color: var(--primary-color);
     color: #fff;
-    &:hover{
+    &:hover {
       background-color: var(--primary-color-darker);
     }
   }
 
-  .btn-secondary{
+  .btn-secondary {
     background-color: transparent;
     border: 1px solid var(--primary-color);
-    color:var(--primary-color);
-    &:hover{
+    color: var(--primary-color);
+    &:hover {
       background-color: var(--primary-color);
       color: #fff;
     }
   }
 
-  .btn-secondary-alt{
+  .btn-secondary-alt {
     background-color: transparent;
     border: 1px solid var(--primary-color);
-    color:#fff;
-    &:hover{
+    color: #fff;
+    &:hover {
       background-color: var(--primary-color);
       color: #fff;
     }
-
   }
 
-  .rounded{
+  .rounded {
     border-radius: 100px;
   }
-  
 
-  --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-  
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
   font-size: 1rem;
   font-weight: 500;
-
 }
 
 html {
@@ -113,67 +106,53 @@ html {
   border-radius: 10px;
 }
 
-body{
+body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-footer{
-  nav{
+footer {
+  nav {
     margin: 1rem 0;
-    ul{
+    ul {
       display: flex;
       list-style: none;
       justify-content: center;
-      li{
+      li {
         margin: 0 1rem;
-        a:visited{
+        a:visited {
           color: inherit;
         }
       }
     }
   }
-    
 }
 
-
-
-a{
+a {
   text-decoration: none;
   transition: var(--transition);
-  &:hover{
-    color: var(--primary-color)
+  &:hover {
+    color: var(--primary-color);
   }
 }
 
-section:not(:first-of-type){
-  margin: 5rem 0 ;
-  
-
-
-
-  
-  
-  
-  
-  
+section:not(:first-of-type) {
+  margin: 5rem 0;
 }
 
-section{
+section {
   width: 100%;
 }
 
-.content-container{
+.content-container {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
-  height: 2000px;
   padding: 0 150px;
 }
-.section-title{
+.section-title {
   font-size: var(--h1);
   color: var(--title-color);
   text-align: center;
 }
-

@@ -13,15 +13,18 @@
       position: relative;
       max-width: 50%;
       background-color: #fff;
-      display: flex;
+      display: grid;
+      grid-template-columns: 3fr 2fr; 
        
       .CloseBtn{
         position: absolute;
         top: 0;
         right: 0;
+        margin: 4%;
+
       }
       .ProjectPreview{
-        width: 60%;
+        
         background-color: var(--primary-color);
         display: flex;
         align-items: center;
@@ -29,11 +32,12 @@
 
       }
       .ProjectInfo{
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 40%;
-        padding: 4%;
+      
+        padding: 8%;
         .TagList{
           margin: 0.25rem 0 1rem 0;
           .Tag{

@@ -1,4 +1,5 @@
 import ProjectModalCss from "./ProjectModal.module.scss";
+import {AiOutlineClose} from 'react-icons/ai'
 
 const ProjectModal = ({ setOpenModal }) => {
   return (
@@ -32,7 +33,7 @@ const ProjectModal = ({ setOpenModal }) => {
           className={ProjectModalCss.CloseBtn}
           onClick={() => setOpenModal(false)}
         >
-          close modal
+          <AiOutlineClose size={30}></AiOutlineClose>
         </button>
       </div>
     </div>

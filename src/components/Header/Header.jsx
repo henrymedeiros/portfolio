@@ -1,8 +1,12 @@
 import HeaderCss from "./Header.module.scss";
 
-const Header = () => {
+const Header = ({ scrollDir }) => {
   return (
-    <header className={HeaderCss.header}>
+    <header
+      className={
+        scrollDir === "scrolling up" ? HeaderCss.scrollUp : HeaderCss.scrollDown
+      }
+    >
       <nav>
         <a href="#" className={HeaderCss.logo}>
           Henry
@@ -16,13 +20,13 @@ const Header = () => {
           </li>
 
           <li>
-            <a href="#projects" tabindex="1">
+            <a href="#projects" tabIndex="1">
               Projetos
             </a>
           </li>
 
           <li>
-            <a href="#contanct">Contato</a>
+            <a href="#contact">Contato</a>
           </li>
         </ul>
       </nav>
