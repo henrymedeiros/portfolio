@@ -15,22 +15,22 @@ const Projects = ({ setOpenModal }) => {
     },
     {
       name: "React Memory Game ",
-      imgSrc: "src/assets/memoryGame.png",
+      imgSrc: "/assets/memoryGame.png",
       setOpenModal: setOpenModal,
     },
     {
       name: "Eduford Site",
-      imgSrc: "src/assets/eduford.png",
+      imgSrc: "/assets/eduford.png",
       setOpenModal: setOpenModal,
     },
     {
       name: "Video Player",
-      imgSrc: "src/assets/videoPlayer.png",
+      imgSrc: "/assets/videoPlayer.png",
       setOpenModal: setOpenModal,
     },
     {
       name: "Light and Dark Mode",
-      imgSrc: "src/assets/lightDark.png",
+      imgSrc: "/assets/lightDark.png",
       setOpenModal: setOpenModal,
     },
   ];
