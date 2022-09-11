@@ -17,7 +17,7 @@ picture {
 :root {
   --text-color: #6d6a7c;
   --title-color: #242329;
-  --hue-value: 250;
+  --hue-value: 220;
   --primary-color: hsl(var(--hue-value), 69%, 61%);
   --primary-color-rgb: 87, 121, 224;
   --primary-color-darker: hsl(var(--hue-value), 57%, 53%);
@@ -138,7 +138,7 @@ a {
 }
 
 section:not(:first-of-type) {
-  margin: 5rem 0;
+  padding: 5rem 0;
 }
 
 section {

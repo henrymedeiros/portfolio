@@ -10,7 +10,7 @@ const Projects = ({ setOpenModal }) => {
     },
     {
       name: "MyWeatherApp",
-      imgSrc: "src/assets/weatherApp.png",
+      imgSrc: "/assets/weatherApp.png",
       setOpenModal: setOpenModal,
     },
     {

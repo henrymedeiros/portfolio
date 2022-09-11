@@ -1,4 +1,4 @@
-.SideWidget{
+.SideWidget {
   width: 40px;
   position: fixed;
   z-index: 10;
@@ -7,13 +7,13 @@
   flex-direction: column;
   align-items: center;
   font-size: 16px;
-  
-  a{
+
+  a {
     writing-mode: vertical-rl;
-    color: var(--primary-color-lighter)
+    color: var(--primary-color-lighter);
   }
   &:after {
-    content: '';
+    content: "";
     display: block;
     width: 1px;
     height: 90px;
@@ -22,29 +22,28 @@
   }
 }
 
-.left{
+.left {
   left: 70px;
   .Social {
     list-style: none;
-    li a{
-      padding: 16px;
+    li a {
+      padding: 20px 10px;
       margin: 0;
+      transition: all 0.3s ease-in-out;
       &:hover,
       &:focus {
-        transform: translateY(-3px);
-        
+        transform: translateY(-8px);
       }
     }
-    li:last-of-type{
+    li:last-of-type {
       margin-bottom: 20px;
     }
   }
-  
 }
 
-.right{
+.right {
   right: 70px;
-  a{
+  a {
     margin-bottom: 36px;
   }
 }
