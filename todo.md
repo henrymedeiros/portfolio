@@ -1,9 +1,15 @@
 # TODO
 
 [x] Links
-[] Logo
-[] Favicon + Title Page
+[x] Logo
+[x] Favicon + Title Page
+[] About section content
+[] Details tag on about
+[] Smooth scrolling
 [] Mobile friendly
 [] Scroll reveal - lib
-[] Animations on svg and buttons
+
+## Extra Stuff
+
 [] Mult lang support
+[] Animations on svg and buttons
