@@ -48,8 +48,9 @@ function App() {
       <Header scrollDir={scrollDir}></Header>
       <SideWidget type={"left"}></SideWidget>
       <SideWidget type={"right"}></SideWidget>
-      <div className="content-container" onScroll={() => console.log("eita")}>
+      <div className="content-container">
         <Hero></Hero>
+
         <About></About>
         <Projects setOpenModal={setOpenModal}></Projects>
         <Contact></Contact>
