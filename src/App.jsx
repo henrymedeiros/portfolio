@@ -12,7 +12,8 @@ function App() {
   const [openModal, setOpenModal] = useState(false);
   const [scrollDir, setScrollDir] = useState("scrolling up");
 
-  useEffect(() => {
+  {
+    /*useEffect(() => {
     const threshold = 0;
     let lastScrollY = window.pageYOffset;
     let ticking = false;
@@ -40,7 +41,8 @@ function App() {
     console.log(scrollDir);
 
     return () => window.removeEventListener("scroll", onScroll);
-  }, [scrollDir]);
+  }, [scrollDir]); */
+  }
 
   return (
     <div className="main-container">
