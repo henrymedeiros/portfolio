@@ -6,8 +6,9 @@
 [x] About section content
 [x] Details tag on about
 [x] new scroll down animation
-[] remove side widgets - do it on new branch
-[] hover effect on menu link
+[x] remove side widgets - do it on new branch
+[x] hover effect on menu link
+[] burger menu
 [] Smooth scrolling
 [] Mobile friendly
 [] Scroll reveal - lib

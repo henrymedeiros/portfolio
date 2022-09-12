@@ -17,6 +17,7 @@ const About = () => {
     <section id="about" className={AboutCss.About}>
       <h1 className={`${AboutCss.Title} section-title`}>Sobre mim</h1>
       <div className={AboutCss.Wrapper}>
+        <img className={AboutCss.Picture} src="" alt="My profile picture" />
         <div className={AboutCss.Content}>
           <h2>
             Opa, Henry aqui!<span>👋</span>
@@ -41,7 +42,6 @@ const About = () => {
             <strong> novas tecnologias</strong>.
           </p>
         </div>
-        <img className={AboutCss.Picture} src="" alt="My profile picture" />
       </div>
       <Details
         summary={"Skills"}
