@@ -37,6 +37,10 @@ const Header = ({ scrollDir }) => {
             </defs>
           </svg>
         </a>
+        <div className={HeaderCss.burgerMenu}>
+          <div></div>
+          <div></div>
+        </div>
         <ul>
           <li>
             <a href="#hero">Início</a>
