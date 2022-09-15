@@ -98,17 +98,17 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 48px;
+  bottom: 40px;
   &::before {
     content: "";
-    width: 7px;
-    height: 7px;
+    width: 6px;
+    height: 12px;
     position: absolute;
     top: 12px;
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--primary-color);
-    border-radius: 50%;
+    border-radius: 12px;
     opacity: 1;
     animation: wheel 1.25s infinite;
     -webkit-animation: wheel 1.25s infinite;
@@ -126,5 +126,15 @@
   to {
     opacity: 0;
     top: 55%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .HeroSection {
+    flex-direction: column-reverse;
+    padding: 100px 0 2rem;
+  }
+  .mouse {
+    display: none;
   }
 }

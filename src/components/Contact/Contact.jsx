@@ -22,24 +22,6 @@ const Contact = () => {
           <FaBehance size={iconSize}></FaBehance>
         </div>
       </div>
-
-      <footer>
-        <nav>
-          <ul>
-            <li>
-              <a href="#hero">Início</a>
-            </li>
-            <li>
-              <a href="#about">Sobre</a>
-            </li>
-
-            <li>
-              <a href="#projects">Projetos</a>
-            </li>
-          </ul>
-        </nav>
-        <div className="copyright">© 2022 - Henry Medeiros</div>
-      </footer>
     </section>
   );
 };

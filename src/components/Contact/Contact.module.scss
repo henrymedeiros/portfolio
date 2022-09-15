@@ -1,31 +1,30 @@
-.ContactSection{
-    text-align: center;
-    padding: 2rem 0;
-    p{
-        max-width: 600px;
-        margin: 2rem auto;
+.ContactSection {
+  text-align: center;
+  padding: 2rem 0;
+  p {
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+
+  .SocialIconsList {
+    display: flex;
+    justify-content: center;
+    .SocialIcon {
+      border: 1px solid var(--primary-color);
+      padding: 8px;
+      border-radius: 100%;
+      width: 64px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-color);
+      margin: 0 0.8rem;
+      &:hover {
+        background-color: var(--primary-color);
+        color: #fff;
+        cursor: pointer;
+      }
     }
-    
-    .SocialIconsList{
-        display: flex;
-        justify-content: center;
-        .SocialIcon{
-            border: 1px solid var(--primary-color);
-            padding: 8px;
-            border-radius: 100%;
-            width: 64px;
-            height: 64px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--primary-color);
-            margin: 0 0.8rem;
-            &:hover{
-                background-color: var(--primary-color);
-                color: #fff;
-                cursor: pointer;
-            }
-        }
-    }   
-    
+  }
 }

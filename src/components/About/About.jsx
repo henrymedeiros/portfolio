@@ -17,11 +17,19 @@ const About = () => {
     <section id="about" className={AboutCss.About}>
       <h1 className={`${AboutCss.Title} section-title`}>Sobre mim</h1>
       <div className={AboutCss.Wrapper}>
-        <img className={AboutCss.Picture} src="" alt="My profile picture" />
+        <picture>
+          <img
+            className={AboutCss.Picture}
+            src="/assets/lol.jpg"
+            alt="My profile picture"
+          />
+        </picture>
+
         <div className={AboutCss.Content}>
           <h2>
             Opa, Henry aqui!<span>👋</span>
           </h2>
+          <br />
           <p>
             Tenho 21 anos e sou <strong>Desenvolvedor Web</strong> com foco em
             <strong> Frontend</strong>. As linguagens de programação que eu mais
@@ -71,10 +79,11 @@ const About = () => {
             <div>
               <h3>Softskills</h3>
               <ul>
-                <li>Teamplayer</li>
+                <li>Trabalho em equipe</li>
                 <li>Mente aberta</li>
                 <li>Criatividade</li>
                 <li>Organização</li>
+                <li>Atenção aos detalhes</li>
               </ul>
             </div>
           </div>
@@ -87,8 +96,31 @@ const About = () => {
           <div>
             <span>
               Você pode ver mais detalhes sobre minha trajetória profissional e
-              acadêmia acessando o meu <a href="">currículo</a>
+              acadêmia acessando o <a href="">meu currículo.</a>
             </span>
+          </div>
+        }
+      />
+      <Details
+        summary={"Curiosidades"}
+        emoji={"👽"}
+        content={
+          <div>
+            <p> |Algum texto aqui sobre motivação para ser dev</p>
+            <br />
+
+            <ul>
+              Livros preferidos
+              <li>Chiquinha 2</li>
+            </ul>
+            <ul>
+              Assuntos de interesse
+              <li>Chiquinha 2</li>
+            </ul>
+            <ul>
+              Filmes favoritos
+              <li>Chiquinha 2</li>
+            </ul>
           </div>
         }
       />

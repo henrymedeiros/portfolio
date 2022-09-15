@@ -1,3 +1,5 @@
+@use "../src/variables";
+
 header {
   display: flex;
   align-items: center;
@@ -31,7 +33,7 @@ header {
     align-items: center;
     position: relative;
     .burgerMenu {
-      display: block;
+      display: none;
       div {
         width: 28px;
         background-color: black;
@@ -54,9 +56,9 @@ header {
         width: 100%;
         position: absolute;
         bottom: 0px;
-        border-bottom: solid 1px var(--primary-color);
+        border-bottom: solid 2px var(--primary-color);
         transform: scaleX(0);
-        transition: transform 250ms ease-in-out;
+        transition: transform 300ms ease-in-out;
       }
       li:hover:before {
         transform: scaleX(1);
@@ -80,14 +82,15 @@ header {
 }
 .scrollUp {
   top: 0;
+
   animation: fade-in 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-@media only screen and (max-width: 1024px) {
-  .burgerMenu {
-    display: block !important;
+@media only screen and (max-width: 768px) {
+  header nav .burgerMenu {
+    display: block;
   }
-  nav ul {
-    display: none !important;
+  header nav ul {
+    display: none;
   }
 }
