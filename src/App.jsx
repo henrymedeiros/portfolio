@@ -5,13 +5,17 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import Sidebar from "./components/Sidebar/Sidebar";
 import ProjectModal from "./components/ProjectModal/ProjectModal";
 
 import { useState, useEffect } from "react";
 
 function App() {
   const [openModal, setOpenModal] = useState(false);
+  const [sidebar, setSidebar] = useState(false);
   const [scrollDir, setScrollDir] = useState("scrolling up");
+
+  const showSidebar = () => setSidebar(!sidebar);
 
   {
     /*useEffect(() => {
@@ -48,7 +52,9 @@ function App() {
   return (
     <div className="main-container">
       {openModal && <ProjectModal setOpenModal={setOpenModal}></ProjectModal>}
-      <Header scrollDir={scrollDir}></Header>
+      <Header scrollDir={scrollDir} showSidebar={showSidebar}></Header>
+      {sidebar && <Sidebar showSidebar={showSidebar}></Sidebar>}
+
       <SideWidget type={"left"}></SideWidget>
       <SideWidget type={"right"}></SideWidget>
       <div className="content-container">

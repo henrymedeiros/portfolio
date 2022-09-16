@@ -9,41 +9,40 @@
       width: 100%;
       background-color: transparent;
       border-radius: 12px;
-     
+
       figure {
         position: relative;
         overflow: hidden;
         border-radius: 12px;
-        figcaption, .Overlay{
-            opacity: 0;
+        figcaption,
+        .Overlay {
+          opacity: 0;
         }
-        &:hover{
-            .Overlay{
-                opacity: 0.8;
-            }
-            figcaption{
-                opacity: 1;
-                transform: translateY(0);
-                
-            }
-            cursor: pointer;
+        &:hover {
+          .Overlay {
+            opacity: 0.8;
+          }
+          figcaption {
+            opacity: 1;
+            transform: translateY(0);
+          }
+          cursor: pointer;
         }
 
         img {
           height: auto;
           aspect-ratio: 16/9;
-          
+
           width: 100%;
           backdrop-filter: blur(205px);
           transition: transform 0.25s;
-          
         }
         figcaption {
           max-width: 100%;
           display: flex;
           position: absolute;
-          
-          z-index: 1000;
+
+          z-index: 3;
           top: 0;
           left: 0;
           width: 100%;
@@ -56,36 +55,34 @@
           color: #fff;
           transform: translateY(20px);
           transition: transform 0.25s;
-          h2{
+          h2 {
             font-weight: 600;
           }
-          button{
-            margin: .75rem 0;
+          button {
+            margin: 0.75rem 0;
             font-weight: 500;
             display: flex;
             align-items: center;
-            &:hover{
+            &:hover {
               background-color: var(--primary-color);
             }
-            
           }
-          button span{
-              margin-left: 5px ;
+          button span {
+            margin-left: 5px;
           }
-          
         }
         .Overlay {
-            background-color: #141c3a;
-            backdrop-filter: blur(5px);
-            position: absolute;
-            width: 100%;
-            height: auto;
-            z-index: 100;
-            top: 0;
-            left: 0;
-            height: 100%;
-            transition: opacity 0.25s;
-          }
+          background-color: #141c3a;
+          backdrop-filter: blur(5px);
+          position: absolute;
+          width: 100%;
+          height: auto;
+          z-index: 2;
+          top: 0;
+          left: 0;
+          height: 100%;
+          transition: opacity 0.25s;
+        }
       }
     }
   }

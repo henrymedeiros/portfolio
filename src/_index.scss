@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
 
+html {
+  font-size: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -35,9 +39,6 @@ picture {
   --section-spacing: 5rem;
 
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-
-  font-size: 1rem;
-  font-weight: 500;
 }
 
 html {
@@ -129,16 +130,13 @@ section {
 
 .btn--small {
   padding: 6px 15px;
-  font-size: 16px;
 }
 
 .btn--medium {
   padding: 10px 20px;
-  font-size: 16px;
 }
 .btn--large {
   padding: 22px 45px;
-  font-size: 18px;
 }
 
 .btn-primary {
@@ -174,7 +172,6 @@ footer {
   bottom: 1.5rem;
   display: flex;
   justify-content: space-between;
-  font-size: 14.4px;
 }
 
 .rounded {
@@ -182,6 +179,9 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+  .section-title {
+    font-size: calc(var(--h1) - 0.5rem);
+  }
   section:not(:first-of-type) {
     padding: 3rem 0;
   }

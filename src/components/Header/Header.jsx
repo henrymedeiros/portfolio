@@ -1,13 +1,19 @@
 import HeaderCss from "./Header.module.scss";
-
+import { useState } from "react";
 const Header = ({ scrollDir }) => {
+  const [isActive, setIsActive] = useState(false);
   return (
     <header
-      className={
-        scrollDir === "scrolling up" ? HeaderCss.scrollUp : HeaderCss.scrollDown
-      }
+      className={`
+        ${
+          scrollDir === "scrolling up"
+            ? HeaderCss.scrollUp
+            : HeaderCss.scrollDown
+        }
+        
+      `}
     >
-      <nav>
+      <nav className={HeaderCss.mainNav}>
         <a href="#" className={HeaderCss.logoContainer}>
           <svg
             width="40"
@@ -37,9 +43,17 @@ const Header = ({ scrollDir }) => {
             </defs>
           </svg>
         </a>
-        <div className={HeaderCss.burgerMenu}>
-          <div></div>
-          <div></div>
+        <div
+          className={`${HeaderCss.burgerMenu} ${
+            isActive ? HeaderCss.active : ""
+          }`}
+          onClick={() => {
+            setIsActive(!isActive);
+            console.log(isActive);
+          }}
+        >
+          <div className={HeaderCss.upperLine}></div>
+          <div className={HeaderCss.bottomLine}></div>
         </div>
         <ul>
           <li>
@@ -50,9 +64,7 @@ const Header = ({ scrollDir }) => {
           </li>
 
           <li>
-            <a href="#projects" tabIndex="1">
-              Projetos
-            </a>
+            <a href="#projects">Projetos</a>
           </li>
 
           <li>
@@ -60,6 +72,26 @@ const Header = ({ scrollDir }) => {
           </li>
         </ul>
       </nav>
+      {isActive && (
+        <nav className={HeaderCss.mobileActive}>
+          <ul>
+            <li>
+              <a href="#hero">Início</a>
+            </li>
+            <li>
+              <a href="#about">Sobre</a>
+            </li>
+
+            <li>
+              <a href="#projects">Projetos</a>
+            </li>
+
+            <li>
+              <a href="#contact">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      )}
     </header>
   );
 };

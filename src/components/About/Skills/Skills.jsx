@@ -3,8 +3,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import Slider from "react-slick";
-import { FaBootstrap, FaSass, FaReact, FaPython, FaFigma} from "react-icons/fa";
-import {SiJavascript} from "react-icons/si";
+import {
+  FaBootstrap,
+  FaSass,
+  FaReact,
+  FaPython,
+  FaFigma,
+} from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
 
 const Skills = () => {
   const settings = {
@@ -14,7 +20,7 @@ const Skills = () => {
     speed: 600,
     dots: false,
     draggable: true,
-    lazyLoad: 'ondemand',
+    lazyLoad: "ondemand",
     slidesToShow: 5,
     slidesToScroll: 1,
     initialSlide: 0,
@@ -48,15 +54,15 @@ const Skills = () => {
 
   return (
     <section id="skills" className={SkillsCss.Skills}>
-      <h2>Algumas tecnologias que eu já trabalhei </h2>
-      <Slider {...settings} >
+      <h3>Algumas tecnologias que eu já trabalhei </h3>
+      <Slider {...settings}>
         <div className={SkillsCss.box}>
           <div className={SkillsCss.IconBox}>
             <SiJavascript size={64}></SiJavascript>
           </div>
           <span>Javascript</span>
         </div>
-        
+
         <div className={SkillsCss.box}>
           <div className={SkillsCss.IconBox}>
             <FaReact size={64}></FaReact>
@@ -69,14 +75,14 @@ const Skills = () => {
           </div>
           <span>Bootstrap</span>
         </div>
-        
+
         <div className={SkillsCss.box}>
           <div className={SkillsCss.IconBox}>
             <FaSass size={64}></FaSass>
           </div>
           <span>Sass</span>
         </div>
-        
+
         <div className={SkillsCss.box}>
           <div className={SkillsCss.IconBox}>
             <FaFigma size={64}></FaFigma>

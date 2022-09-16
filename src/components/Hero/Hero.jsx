@@ -1,7 +1,6 @@
 import HeroCss from "./Hero.module.scss";
 import Typewriter from "typewriter-effect";
 import ProgrammerSVG from "./ProgrammerSVG.jsx";
-import Button from "../Button/Button.jsx";
 
 const Hero = () => {
   return (
