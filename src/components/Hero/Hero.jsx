@@ -18,13 +18,14 @@ const Hero = () => {
           Desenvolvedor Front-End
         </h3>
         <p className={HeroCss.Paragraph}>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla,
-          beatae ea! Est, fuga quibusdam voluptate laboriosam voluptatem.
+          Desenvolvo layouts responsivos com foco em design, usabilidade e
+          experiência do usuário. Clique no botão abaixo para ver alguns dos
+          meus projetos.
         </p>
-        <button className="btn btn-primary btn--large">Entre em contato</button>
+        <button className="btn btn-primary btn--large">Meus projetos</button>
       </div>
 
-      <ProgrammerSVG color="#6E57E0" />
+      <ProgrammerSVG color="rgb(29, 185, 84)" />
       <div class={HeroCss.mouse}></div>
     </section>
   );

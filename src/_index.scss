@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
 
 html {
   font-size: 16px;
@@ -9,7 +10,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 img,
@@ -19,17 +20,17 @@ picture {
 }
 
 :root {
-  --text-color: #6d6a7c;
-  --title-color: #242329;
+  --text-color: #949495;
+  --title-color: #fff;
   --hue-value: 230;
-  --primary-color: hsl(var(--hue-value), 69%, 61%);
-  --primary-color-rgb: 87, 121, 224;
-  --primary-color-darker: hsl(var(--hue-value), 57%, 53%);
-  --primary-color-lighter: hsl(var(--hue-value), 92%, 75%);
-  --bg-color: #fbfbfe;
+  --primary-color: rgb(29, 185, 84);
+  --primary-color-rgb: 29, 185, 84;
+  --primary-color-darker: rgb(29, 185, 84);
+  --primary-color-lighter: rgb(29, 185, 84);
+  --bg-color: #141415;
 
   /* Font Size */
-  --display-title: 4.2rem;
+  --display-title: 4rem;
   --h1: 3.15rem;
   --h2: 2.35rem;
   --h3: 1.77rem;
@@ -136,7 +137,7 @@ section {
   padding: 10px 20px;
 }
 .btn--large {
-  padding: 22px 45px;
+  padding: 20px 40px;
 }
 
 .btn-primary {
@@ -176,6 +177,14 @@ footer {
 
 .rounded {
   border-radius: 100px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.highlighted {
+  color: #fff;
 }
 
 @media only screen and (max-width: 768px) {

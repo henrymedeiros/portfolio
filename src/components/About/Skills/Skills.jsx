@@ -54,7 +54,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className={SkillsCss.Skills}>
-      <h3>Algumas tecnologias que eu já trabalhei </h3>
+      <h3 className="highlighted">Algumas tecnologias que eu já trabalhei </h3>
       <Slider {...settings}>
         <div className={SkillsCss.box}>
           <div className={SkillsCss.IconBox}>

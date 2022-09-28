@@ -4,7 +4,7 @@ import Skills from "./Skills/Skills";
 const Details = ({ summary, emoji, content }) => {
   return (
     <details>
-      <summary>
+      <summary className="highlighted">
         {summary} {emoji}
       </summary>
       {content}
@@ -26,7 +26,7 @@ const About = () => {
         </picture>
 
         <div className={AboutCss.Content}>
-          <h2>
+          <h2 className="highlighted">
             Opa, Henry aqui!
             <span>
               <svg width="30" height="31" viewBox="0 0 30 31" fill="none">
@@ -55,28 +55,34 @@ const About = () => {
           </h2>
           <br />
           <p>
-            Tenho 21 anos e sou <strong>Desenvolvedor Web</strong> com foco em
-            <strong> Frontend</strong>. As linguagens de programação que eu mais
-            tenho afinidade são: <strong>Javascript</strong> e
-            <strong> Python</strong>.
+            Tenho 21 anos e sou{" "}
+            <span className="underline highlighted">Desenvolvedor Web</span> com
+            foco em <span className="underline highlighted">Frontend</span>. As
+            linguagens de programação que eu mais tenho afinidade são:{" "}
+            <span className="underline highlighted">Javascript</span> e
+            <span className="underline highlighted"> Python</span>.
           </p>
           <br />
           <p>
-            Técnico formado em <strong>Informática</strong> e
-            <strong> Jogos digitas</strong> e atualmente estou cursando
-            bacharelado em <strong>Tecnologia da Informação</strong> na
-            Universidade Federal do Rio Grande do Norte.
+            Técnico formado em{" "}
+            <span className="underline highlighted">Informática</span> e
+            <span className="underline highlighted"> Jogos digitas</span> e
+            atualmente estou cursando bacharelado em{" "}
+            <span className="underline highlighted">
+              Tecnologia da Informação
+            </span>{" "}
+            na Universidade Federal do Rio Grande do Norte.
           </p>
           <br />
           <p>
             Gosto de aprender coisas novas todos os dias e estou sempre em busca
-            de me manter atualizado com as
-            <strong> novas tecnologias</strong>.
+            de me manter atualizado com as{" "}
+            <span className="underline highlighted">novas tecnologias</span>.
           </p>
         </div>
       </div>
       <Details
-        summary={"Minhas Skills"}
+        summary={"SKILLS"}
         emoji={"🙋‍♂‍"}
         content={
           <div className={AboutCss.SkillDetails}>
@@ -114,19 +120,22 @@ const About = () => {
         }
       />
       <Details
-        summary={"Currículo"}
+        summary={"CÚRRICULO"}
         emoji={"📜"}
         content={
           <div>
             <span>
               Você pode ver mais detalhes sobre minha trajetória profissional e
-              acadêmia acessando o <a href="">meu currículo.</a>
+              acadêmia acessando o{" "}
+              <a href="" className="underline highlighted">
+                meu currículo.
+              </a>
             </span>
           </div>
         }
       />
       <Details
-        summary={"Curiosidades"}
+        summary={"CURIOSIDADES"}
         emoji={"👽"}
         content={
           <div>

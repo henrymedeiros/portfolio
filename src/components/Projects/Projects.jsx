@@ -7,6 +7,7 @@ const Projects = ({ setOpenModal }) => {
       name: "Blackjack Javascript",
       imgSrc: "/assets/blackjack.png",
       setOpenModal: setOpenModal,
+      tags: ["xxx", "yyy"],
     },
     {
       name: "MyWeatherApp",
