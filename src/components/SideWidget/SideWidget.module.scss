@@ -34,3 +34,10 @@
 .right {
   right: max(calc((100% - 1440px) / 2), 5%);
 }
+
+@media only screen and (max-width: 768px) {
+  .left,
+  .right {
+    display: none;
+  }
+}

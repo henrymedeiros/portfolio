@@ -5,7 +5,6 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import Sidebar from "./components/Sidebar/Sidebar";
 import ProjectModal from "./components/ProjectModal/ProjectModal";
 
 import { useState, useEffect } from "react";

@@ -8,11 +8,12 @@
 [x] new scroll down animation
 [x] remove side widgets - do it on new branch
 [x] hover effect on menu link
+[x] improve burger menu code
 [] burger menu
 [] modal layout
 [] new footer layout + component
-[] Smooth scrolling
-[] Mobile friendly
+[] Change to dark theme
+[] Responsive
 [] Scroll reveal - lib
 
 ## Extra Stuff

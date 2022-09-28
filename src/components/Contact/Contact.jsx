@@ -21,6 +21,9 @@ const Contact = () => {
         <div className={ContactCss.SocialIcon}>
           <FaBehance size={iconSize}></FaBehance>
         </div>
+        <div className={ContactCss.SocialIcon}>
+          <FiMail size={iconSize}></FiMail>
+        </div>
       </div>
     </section>
   );

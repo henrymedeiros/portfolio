@@ -1,4 +1,10 @@
 .About {
+  h2 svg {
+    animation-name: handAnimation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+  }
   .Title {
     margin-bottom: 56px;
   }
@@ -6,7 +12,7 @@
     display: grid;
     grid-template-columns: 3fr 6fr;
     gap: 50px;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     .Content {
       display: flex;
       align-items: start;
@@ -49,5 +55,39 @@
         margin: 0 auto 50px;
       }
     }
+  }
+}
+
+@keyframes handAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
   }
 }

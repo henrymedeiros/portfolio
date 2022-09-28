@@ -1,5 +1,27 @@
 import HeaderCss from "./Header.module.scss";
 import { useState } from "react";
+
+const NavLinks = () => {
+  return (
+    <ul>
+      <li>
+        <a href="#hero">Início</a>
+      </li>
+      <li>
+        <a href="#about">Sobre</a>
+      </li>
+
+      <li>
+        <a href="#projects">Projetos</a>
+      </li>
+
+      <li>
+        <a href="#contact">Contato</a>
+      </li>
+    </ul>
+  );
+};
+
 const Header = ({ scrollDir }) => {
   const [isActive, setIsActive] = useState(false);
   return (
@@ -51,45 +73,18 @@ const Header = ({ scrollDir }) => {
             setIsActive(!isActive);
             console.log(isActive);
           }}
-        >
-          <div className={HeaderCss.upperLine}></div>
-          <div className={HeaderCss.bottomLine}></div>
-        </div>
-        <ul>
-          <li>
-            <a href="#hero">Início</a>
-          </li>
-          <li>
-            <a href="#about">Sobre</a>
-          </li>
-
-          <li>
-            <a href="#projects">Projetos</a>
-          </li>
-
-          <li>
-            <a href="#contact">Contato</a>
-          </li>
-        </ul>
+        ></div>
+        <NavLinks></NavLinks>
       </nav>
       {isActive && (
         <nav className={HeaderCss.mobileActive}>
-          <ul>
-            <li>
-              <a href="#hero">Início</a>
-            </li>
-            <li>
-              <a href="#about">Sobre</a>
-            </li>
-
-            <li>
-              <a href="#projects">Projetos</a>
-            </li>
-
-            <li>
-              <a href="#contact">Contato</a>
-            </li>
-          </ul>
+          <NavLinks></NavLinks>
+          <div className={HeaderCss.socialsMobile}>
+            <a href="">he</a>
+            <a href="">he</a>
+            <a href="">he</a>
+            <a href="">he</a>
+          </div>
         </nav>
       )}
     </header>
