@@ -1,28 +1,24 @@
 import ProjectModalCss from "./ProjectModal.module.scss";
-import {AiOutlineClose} from 'react-icons/ai'
+import { AiOutlineClose } from "react-icons/ai";
 
-const ProjectModal = ({ setOpenModal }) => {
+const ProjectModal = ({ currentProject, setOpenModal }) => {
   return (
     <div className={ProjectModalCss.ModalBG}>
       <div className={ProjectModalCss.ModalContainer}>
         <div className={ProjectModalCss.ProjectPreview}>
-          <img src="src\assets\blackjack.png" alt="" />
+          <img src={currentProject.imgSrc} alt="" />
         </div>
         <div className={ProjectModalCss.ProjectInfo}>
           <span>Projeto #01</span>
-          <h1>Project Title</h1>
+          <h1>{currentProject.name}</h1>
           <div className={ProjectModalCss.TagList}>
-            <span className={ProjectModalCss.Tag}>Bruh</span>
-            <span className={ProjectModalCss.Tag}>Bruh</span>
+            {currentProject.tags.map((tag) => {
+              return <span className={ProjectModalCss.Tag}>{tag}</span>;
+            })}
           </div>
 
           <h3>Sobre o projeto</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate
-            neque nesciunt odio in, repellat aliquid dolores quas. Labore
-            repellendus ex excepturi rem. Quibusdam consequatur temporibus ad
-            numquam debitis voluptas culpa!
-          </p>
+          <p>{currentProject.description}</p>
 
           <div className={ProjectModalCss.ButtonsContainer}>
             <button className="btn btn-primary btn--small">Demo</button>

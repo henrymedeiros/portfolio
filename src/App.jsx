@@ -11,6 +11,7 @@ import { useState, useEffect } from "react";
 
 function App() {
   const [openModal, setOpenModal] = useState(false);
+  const [currentProject, setCurrentProject] = useState(null);
   const [sidebar, setSidebar] = useState(false);
   const [scrollDir, setScrollDir] = useState("scrolling up");
 
@@ -50,7 +51,12 @@ function App() {
 
   return (
     <div className="main-container">
-      {openModal && <ProjectModal setOpenModal={setOpenModal}></ProjectModal>}
+      {openModal && (
+        <ProjectModal
+          currentProject={currentProject}
+          setOpenModal={setOpenModal}
+        ></ProjectModal>
+      )}
       <Header scrollDir={scrollDir} showSidebar={showSidebar}></Header>
       {sidebar && <Sidebar showSidebar={showSidebar}></Sidebar>}
 
@@ -60,7 +66,10 @@ function App() {
         <Hero></Hero>
 
         <About></About>
-        <Projects setOpenModal={setOpenModal}></Projects>
+        <Projects
+          setOpenModal={setOpenModal}
+          setCurrentProject={setCurrentProject}
+        ></Projects>
         <Contact></Contact>
         <Footer></Footer>
       </div>
