@@ -9,11 +9,10 @@
 [x] remove side widgets - do it on new branch
 [x] hover effect on menu link
 [x] improve burger menu code
-[] burger menu
+[x] burger menu
+[x] Responsive
 [] modal layout
-[] new footer layout + component
-[] Change to dark theme
-[] Responsive
+[] populate modal with projects data
 [] Scroll reveal - lib
 
 ## Extra Stuff
