@@ -28,7 +28,12 @@
       background-color: var(--primary-color);
       object-fit: cover;
       max-width: 350px;
+      border-radius: 100%;
     }
+  }
+
+  .DetailInnerContent {
+    margin: 1rem 0;
   }
 
   .SkillDetails {
@@ -38,7 +43,7 @@
 
     div {
       flex-grow: 1;
-      margin: 1.25rem 0;
+
       align-items: center;
       display: flex;
       flex-direction: column;

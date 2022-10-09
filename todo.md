@@ -1,6 +1,5 @@
 # TODO
 
-[x] Links
 [x] Logo
 [x] Favicon + Title Page
 [x] About section content
@@ -11,9 +10,13 @@
 [x] improve burger menu code
 [x] burger menu
 [x] Responsive
-[] modal layout
-[] populate modal with projects data
+[x] modal layout
+[x] populate modal with projects data
+[x] fix all links
+[] fix modal responsive
+[] fill all content areas
 [] Scroll reveal - lib
+[] easy theme change
 
 ## Extra Stuff
 

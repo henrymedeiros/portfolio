@@ -22,7 +22,9 @@ const Hero = () => {
           experiência do usuário. Clique no botão abaixo para ver alguns dos
           meus projetos.
         </p>
-        <button className="btn btn-primary btn--large">Meus projetos</button>
+        <a href="#projects">
+          <button className="btn btn-primary btn--large">Meus projetos</button>
+        </a>
       </div>
 
       <ProgrammerSVG color="rgb(29, 185, 84)" />

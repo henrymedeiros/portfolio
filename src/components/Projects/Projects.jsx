@@ -5,7 +5,7 @@ const Projects = ({ setCurrentProject, setOpenModal }) => {
   let projects = [
     {
       name: "Blackjack Javascript",
-      imgSrc: "/assets/blackjack.png",
+      imgSrc: "/assets/mockups/test.png",
       setOpenModal: setOpenModal,
       setCurrentProject: setCurrentProject,
       tags: ["xxxss", "yyy"],

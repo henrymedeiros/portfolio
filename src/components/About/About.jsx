@@ -7,7 +7,7 @@ const Details = ({ summary, emoji, content }) => {
       <summary className="highlighted">
         {summary} {emoji}
       </summary>
-      {content}
+      <div class={AboutCss.DetailInnerContent}>{content}</div>
     </details>
   );
 };
@@ -127,7 +127,11 @@ const About = () => {
             <span>
               Você pode ver mais detalhes sobre minha trajetória profissional e
               acadêmia acessando o{" "}
-              <a href="" className="underline highlighted">
+              <a
+                href="/assets/cv.pdf"
+                target="_blank"
+                className="underline highlighted"
+              >
                 meu currículo.
               </a>
             </span>
@@ -139,21 +143,45 @@ const About = () => {
         emoji={"👽"}
         content={
           <div>
-            <p> |Algum texto aqui sobre motivação para ser dev</p>
+            <p>
+              <span class="underline highlighted">
+                O meu sonho é viajar o mundo.
+              </span>{" "}
+              O mundo é um lugar enorme, cheio de culturas, pessoas, paisagens e
+              ambientes diferentes e o meu sonho é poder explorar esse nosso
+              vasto planeta e vivenciar o máximo possível de toda essa
+              diversidade!{" "}
+            </p>
+            <br />
+            <p>
+              Esse é um dos motivos pelo qual eu sempre me interessei pela área
+              de tecnologia. A possibilidade de poder atuar em qualquer lugar do
+              globo utilizando apenas o computador é ideal. A minha ideia aqui é
+              juntar o útil ao agradável, trabalhando com tecnologia e viajando
+              o mundo. ✈️🌎
+            </p>
+            <br />
+            <p>
+              Por fim, vou deixar uma pequena seleção de filmes, séries, livros
+              e jogos que eu curto e recomendo para você que chegou até aqui! 😁
+            </p>
             <br />
 
             <ul>
-              Livros preferidos
-              <li>Chiquinha 2</li>
+              <strong>Excelentes leituras 📖</strong>
+              <li>O poder do hábito</li>
+              <li>Clean Code</li>
+              <li>1984</li>
             </ul>
+            <br />
+
             <ul>
-              Assuntos de interesse
-              <li>Chiquinha 2</li>
+              <strong>Meus jogos favoritos 🎮 </strong>
+              <li>Dark Souls I, II e III</li>
+              <li>Street Fighter</li>
+              <li></li>
             </ul>
-            <ul>
-              Filmes favoritos
-              <li>Chiquinha 2</li>
-            </ul>
+            <br />
           </div>
         }
       />
