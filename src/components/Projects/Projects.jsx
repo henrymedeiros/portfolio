@@ -17,7 +17,7 @@ const Projects = ({ setCurrentProject, setOpenModal }) => {
       imgSrc: "/assets/bookmark.png",
       setOpenModal: setOpenModal,
       setCurrentProject: setCurrentProject,
-      tags: ["xxx", "yyy"],
+      tags: ["Landing Page", "TailwindCSS", "Javascript", "Mobile First"],
       description: "This is a solution to the Bookmark landing page challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
       links: { demoLink: "https://henrymedeiros.github.io/bookmark/", codeLink: "https://github.com/henrymedeiros/bookmark" },
     },
