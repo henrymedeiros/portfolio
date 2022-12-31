@@ -20,7 +20,7 @@ const About = () => {
         <picture>
           <img
             className={AboutCss.Picture}
-            src="/assets/lol.jpg"
+            src="/assets/profile.jpg"
             alt="My profile picture"
           />
         </picture>
@@ -156,32 +156,12 @@ const About = () => {
             <p>
               Esse é um dos motivos pelo qual eu sempre me interessei pela área
               de tecnologia. A possibilidade de poder atuar em qualquer lugar do
-              globo utilizando apenas o computador é ideal. A minha ideia aqui é
-              juntar o útil ao agradável, trabalhando com tecnologia e viajando
+              globo utilizando apenas o computador é algo fascinante! O meu objetivo é unir 
+              o útil ao agradável, trabalhando com tecnologia e viajando
               o mundo. ✈️🌎
             </p>
             <br />
-            <p>
-              Por fim, vou deixar uma pequena seleção de filmes, séries, livros
-              e jogos que eu curto e recomendo para você que chegou até aqui! 😁
-            </p>
-            <br />
-
-            <ul>
-              <strong>Excelentes leituras 📖</strong>
-              <li>O poder do hábito</li>
-              <li>Clean Code</li>
-              <li>1984</li>
-            </ul>
-            <br />
-
-            <ul>
-              <strong>Meus jogos favoritos 🎮 </strong>
-              <li>Dark Souls I, II e III</li>
-              <li>Street Fighter</li>
-              <li></li>
-            </ul>
-            <br />
+           
           </div>
         }
       />

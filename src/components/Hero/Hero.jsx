@@ -8,14 +8,14 @@ const Hero = () => {
       <div className={HeroCss.HeroText}>
         <h1 className={`${HeroCss.Title} hero-title`}>Henry Medeiros</h1>
         <h3 className={HeroCss.Subtitle}>
-          {/*<Typewriter
+          {<Typewriter
             options={{
-              strings: ["Desenvolvedor Front-End", "Freelancer", ],
-              autoStart: false,
-              loop: false,
+              strings: ["Desenvolvedor Front-End", "Freelancer", "Estudante" ],
+              autoStart: true,
+              loop: true,
             }}
-          />*/}
-          Desenvolvedor Front-End
+          />}
+          
         </h3>
         <p className={HeroCss.Paragraph}>
           Desenvolvo layouts responsivos com foco em design, usabilidade e

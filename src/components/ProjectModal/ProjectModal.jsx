@@ -21,8 +21,9 @@ const ProjectModal = ({ currentProject, setOpenModal }) => {
           <p>{currentProject.description}</p>
 
           <div className={ProjectModalCss.ButtonsContainer}>
-            <button className="btn btn-primary btn--small">Demo</button>
-            <button className="btn btn-secondary btn--small">Código</button>
+            <a target="_blank" href={currentProject.links.demoLink}><button className="btn btn-primary btn--small">Demo</button></a>
+            
+            <a target="_blank" href={currentProject.links.codeLink}><button className="btn btn-secondary btn--small">Código</button></a>
           </div>
         </div>
         <button
