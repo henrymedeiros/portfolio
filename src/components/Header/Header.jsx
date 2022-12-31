@@ -80,10 +80,7 @@ const Header = ({ scrollDir }) => {
         <nav className={HeaderCss.mobileActive}>
           <NavLinks></NavLinks>
           <div className={HeaderCss.socialsMobile}>
-            <a href="">he</a>
-            <a href="">he</a>
-            <a href="">he</a>
-            <a href="">he</a>
+            
           </div>
         </nav>
       )}
