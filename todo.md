@@ -13,13 +13,13 @@
 [x] modal layout
 [x] populate modal with projects data
 [x] fix all links
-[] fix modal responsive
-[] fill all content areas
+[x] fix modal responsive
+[x] fill all content areas
 [] Scroll reveal - lib
 [] easy theme change
 
 ## Extra Stuff
 
-[] GSAP Animations
+[] Framer Motion Animations
 [] Mult lang support
 [] Animations on svg and buttons

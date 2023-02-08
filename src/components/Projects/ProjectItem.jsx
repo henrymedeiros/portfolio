@@ -9,7 +9,7 @@ const ProjectItem = (project) => {
   return (
     <div className={ProjectsCss.ProjectItem}>
       <figure>
-        <img src={project.imgSrc} alt="" />
+        <img src={project.imgSrc} alt={project.name} id={project.id} />
         <figcaption>
           <h2>{project.name}</h2>
 
