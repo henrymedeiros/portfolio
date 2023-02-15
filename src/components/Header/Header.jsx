@@ -1,23 +1,40 @@
 import HeaderCss from "./Header.module.scss";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const NavLinks = () => {
   return (
     <ul>
-      <li>
+      <motion.li
+        initial={{ y: "-100px" }}
+        animate={{ y: 0 }}
+        transition={{ duration: "0.75", delay: 0.3 }}
+      >
         <a href="#hero">Início</a>
-      </li>
-      <li>
+      </motion.li>
+      <motion.li
+        initial={{ y: "-100px" }}
+        animate={{ y: 0 }}
+        transition={{ duration: "0.75", delay: 0.6 }}
+      >
         <a href="#about">Sobre</a>
-      </li>
+      </motion.li>
 
-      <li>
+      <motion.li
+        initial={{ y: "-100px" }}
+        animate={{ y: 0 }}
+        transition={{ duration: "0.75", delay: 0.9 }}
+      >
         <a href="#projects">Projetos</a>
-      </li>
+      </motion.li>
 
-      <li>
+      <motion.li
+        initial={{ y: "-100px" }}
+        animate={{ y: 0 }}
+        transition={{ duration: "0.75", delay: 1.2 }}
+      >
         <a href="#contact">Contato</a>
-      </li>
+      </motion.li>
     </ul>
   );
 };
@@ -36,7 +53,13 @@ const Header = ({ scrollDir }) => {
       `}
     >
       <nav className={HeaderCss.mainNav}>
-        <a href="#" className={HeaderCss.logoContainer}>
+        <motion.a
+          href="#"
+          className={HeaderCss.logoContainer}
+          initial={{ y: "-80px" }}
+          animate={{ y: 0 }}
+          transition={{ duration: "0.7" }}
+        >
           <svg
             width="40"
             height="48"
@@ -64,7 +87,7 @@ const Header = ({ scrollDir }) => {
               </clipPath>
             </defs>
           </svg>
-        </a>
+        </motion.a>
         <div
           className={`${HeaderCss.burgerMenu} ${
             isActive ? HeaderCss.active : ""
@@ -79,9 +102,7 @@ const Header = ({ scrollDir }) => {
       {isActive && (
         <nav className={HeaderCss.mobileActive}>
           <NavLinks></NavLinks>
-          <div className={HeaderCss.socialsMobile}>
-            
-          </div>
+          <div className={HeaderCss.socialsMobile}></div>
         </nav>
       )}
     </header>

@@ -1,18 +1,21 @@
 import SideCss from "./SideWidget.module.scss";
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import { FaBehance } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const SideWidget = ({ type }) => {
   const iconSize = 26;
   return (
-    <div
+    <motion.div
       className={`${SideCss.SideWidget} ${
         type == "left" ? SideCss.left : "auto"
       } ${type == "right" ? SideCss.right : "auto"} `}
+      initial={{ x: type === "left" ? "-25vw" : "25vw" }}
+      animate={{ x: 0 }}
+      transition={{ duration: "1.5", delay: 0.9 }}
     >
       {type == "left" ? (
         <ul className={SideCss.Social}>
-          
           <li>
             <a href="https://github.com/henrymedeiros" target="_blank">
               <FiGithub size={iconSize}></FiGithub>
@@ -36,7 +39,7 @@ const SideWidget = ({ type }) => {
       ) : (
         <a href="mailto:henrymedeiros77@gmail.com">henrymedeiros77@gmail.com</a>
       )}
-    </div>
+    </motion.div>
   );
 };
 

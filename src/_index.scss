@@ -47,6 +47,7 @@ picture {
 html {
   scrollbar-width: thin;
   scrollbar-color: var(--primary-color-lighter) var(--bg-color);
+  overflow-x: hidden;
 }
 ::-webkit-scrollbar {
   width: 12px;
