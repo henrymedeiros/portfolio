@@ -11,18 +11,18 @@ const Projects = ({ setCurrentProject, setOpenModal }) => {
 
   let projects = [
     {
-      name: "Google Clone",
+      name: "Yu-gi-oh! Deck Builder",
       get id() {
         return kebabCaseConvert(this.name);
       },
-      imgSrc: "/assets/googleClone.jpg",
+      imgSrc: "/assets/yugioh.png",
       setOpenModal: setOpenModal,
       setCurrentProject: setCurrentProject,
-      tags: ["React", "TailwindCSS", "Clone", "Reverse Engineering"],
-      description: "Clone das funcionalidades e layout do Google",
+      tags: ["React", "TailwindCSS", "React Context", "Third Pary API", "File Handling"],
+      description: "Um editor de deck de yu-gi-oh completamente funcional utilizando React.",
       links: {
-        demoLink: "https://google-clone-henrymedeiros.vercel.app/",
-        codeLink: "https://github.com/henrymedeiros/google-clone",
+        demoLink: "https://yugioh-deck-builder.netlify.app/",
+        codeLink: "https://github.com/henrymedeiros/yugioh-deck-builder",
       },
     },
     {
@@ -42,6 +42,21 @@ const Projects = ({ setCurrentProject, setOpenModal }) => {
       },
     },
     {
+      name: "Google Clone",
+      get id() {
+        return kebabCaseConvert(this.name);
+      },
+      imgSrc: "/assets/googleClone.jpg",
+      setOpenModal: setOpenModal,
+      setCurrentProject: setCurrentProject,
+      tags: ["React", "TailwindCSS", "Clone", "Reverse Engineering"],
+      description: "Clone das funcionalidades e layout do Google",
+      links: {
+        demoLink: "https://google-clone-henrymedeiros.vercel.app/",
+        codeLink: "https://github.com/henrymedeiros/google-clone",
+      },
+    },
+    /* {
       name: "MyWeatherApp",
       get id() {
         return kebabCaseConvert(this.name);
@@ -56,7 +71,7 @@ const Projects = ({ setCurrentProject, setOpenModal }) => {
         demoLink: "https://henrymedeiros.github.io/weather-app/",
         codeLink: "https://github.com/henrymedeiros/weather-app",
       },
-    },
+    }, */
 
     {
       name: "Personal Portfolio",
@@ -91,19 +106,19 @@ const Projects = ({ setCurrentProject, setOpenModal }) => {
       },
     },
     {
-      name: "Light and Dark Mode",
+      name: "JS Blackjack",
       get id() {
         return kebabCaseConvert(this.name);
       },
-      imgSrc: "/assets/lightDark.png",
+      imgSrc: "/assets/blackjack.png",
       setCurrentProject: setCurrentProject,
       setOpenModal: setOpenModal,
-      tags: ["Javascript", "CSS3", "HTML5", "Dark Theme"],
+      tags: ["Javascript ES6", "CSS3", "HTML5", "Figma", "Wireframing"],
       description:
-        "Pequeno projeto para implementar um site com tema opcional de cor (Dark Theme). Aproveitei também para ampliar meus conhecimentos na tecnologia Sass.",
+        "Um dos meus primeiros projetos, feito em javascript puro. Todos os assets e design foram feitos do zero utilizando figma.",
       links: {
-        demoLink: "https://henrymedeiros.github.io/light-and-dark-mode/",
-        codeLink: "https://github.com/henrymedeiros/light-and-dark-mode",
+        demoLink: "https://henrymedeiros.github.io/blackjack/",
+        codeLink: "https://github.com/henrymedeiros/blackjack",
       },
     },
   ];
